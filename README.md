@@ -91,4 +91,3 @@ Projeto pessoal idealizado, dirigido e desenvolvido por **Gabriel Antunes**.
 ---
 
 O Antunes OS não é apresentado como um produto final. Ele documenta a evolução real de uma operação e de um desenvolvedor em formação.
-

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Antunes OS — gestão interna da Antunes Digital." />
+  <meta name="theme-color" content="#09090a" />
+  <title>Antunes OS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2309090a'/%3E%3Cpath d='M14 45 30 12h8L24 45h-10Zm25-33h11L34 52H23L39 12Z' fill='%23ff1744'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="os-brand"><img src="./assets/antunes-digital-logo.png" alt="Antunes Digital"><span>OS <i>MVP</i></span></div>
+    <nav id="nav" aria-label="Módulos do Antunes OS">
+      <button class="active" data-view="dashboard"><span>⌂</span>Visão geral</button>
+      <button data-view="clientes"><span>◎</span>Clientes</button>
+      <button data-view="oportunidades"><span>◇</span>Oportunidades</button>
+      <button data-view="projetos"><span>▦</span>Projetos</button>
+      <button data-view="tarefas"><span>✓</span>Tarefas</button>
+      <button data-view="notas"><span>≡</span>Notas</button>
+      <button data-view="parceiros"><span>◉</span>Parceiros</button>
+    </nav>
+    <div class="sidebar-foot"><span class="online-dot"></span><div><b>Ambiente local</b><small>Dados neste dispositivo</small></div></div>
+  </aside>
+  <main class="workspace">
+    <header class="topbar">
+      <button class="mobile-menu" id="mobile-menu" aria-label="Abrir menu">☰</button>
+      <div><p id="page-kicker">CENTRAL DE OPERAÇÃO</p><h1 id="page-title">Visão geral</h1></div>
+      <button class="primary" id="new-item">+ Novo registro</button>
+    </header>
+    <section id="content" class="content" aria-live="polite"></section>
+  </main>
+  <dialog id="record-dialog">
+    <form id="record-form" method="dialog">
+      <div class="dialog-head"><div><small id="dialog-kicker">NOVO REGISTRO</small><h2 id="dialog-title">Adicionar</h2></div><button type="button" id="close-dialog" aria-label="Fechar">×</button></div>
+      <div id="form-fields" class="form-fields"></div>
+      <div class="dialog-actions"><button type="button" class="secondary" id="cancel-dialog">Cancelar</button><button type="submit" class="primary">Salvar registro</button></div>
+    </form>
+  </dialog>
+  <script src="./script.js"></script>
+</body>
+</html>
